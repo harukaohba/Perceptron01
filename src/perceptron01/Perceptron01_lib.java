@@ -41,6 +41,10 @@ public class Perceptron01_lib {
 		}
 	}
 
+	public double getPredict(double data[]) {
+		double u = this.getInnerProduct(w, data); //wx内積計算
+		return Math.signum(u);	
+	}
 
 	
 
